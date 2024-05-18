@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="panel.css">
+
+  <script src="cdn.jsdelivr.net_npm_select2@4.1.0-rc.0_dist_js_select2.min.js"></script>
+<link rel="stylesheet" href="cdn.jsdelivr.net_npm_select2@4.1.0-rc.0_dist_css_select2.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+<a href="#" class="logo">LLA <span>.</span></a>
+<ul class="menu-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+  </nav>
+</header>
+<section class="main-section">
+<div class="content">
+<h1>Start Your Language Learning Process</h1>
+<p>
+  LLI's interactive materials help you learn a language anywhere, anytime you want.
+</p>
+
+
+</div>
+
+
+
+</section>
+
+   <div class="wrapper ">
+    <p id="error-message" style="color: red;"></p>
+    <div class="form-box register">
+      <h1>Register</h1>
+      <form action="" method="post"  id="form" class="form" >
+       
+          <div class="input-box">
+       
+            <div class="input-group">
+              <label for="mail" class="email-box" >
+          <input type="email" name="email"  placeholder="e-mail" id="mail" required
+         > <span class="email-error"></span> </label>
+         
+         
+         </div>
+
+
+         <div class="input-group">
+          <label for="phone" class="phone-box">
+          <input type="tel" name="phone" placeholder="phone" id ="phone" required> <br>
+          <span class="phone-error"></span></label>
+          
+        </div>
+        <div class="input-group">
+          <label for="occSelect"></label>
+          <select id="occSelect" name="occ" style="width: 255px" >
+            <option value="" selected hidden>Select Country</option>
+          <span class="occ-error"></span>
+        </select>
+       
+      </select>
+    </div>
+          <!-- <input type="text" placeholder="City" id="city" required><br> -->
+          <div class="as">
+            <select id="citySelect" name="city" style="width: 255px" >
+              <option value="" selected hidden>Select Level</option>
+           
+            </select>
+            <div class="error" id="select-error"></div>
+          </div>
+
+          
+          <div class="as">
+            <select id="tckn" name="tckn" style="width: 255px" >
+              <option value="" selected hidden>Select Level</option>
+           
+            </select>
+            <div class="error" id="select-error"></div>
+          </div>
+
+        <div class="input-group">
+          <label for="password" class="pass-box">
+          <input type="number" name="pass" placeholder="password" id="password" required><br>
+          <span class="password-error"></span></label>
+        </div>
+        </div>
+         <button name="submitreg" type="submit" id="regbtn" class="btn" >Register</button>
+        <div class="login-register">
+          <p>Already have an account? <a href="#" class="login-link">login</a>
+
+
+          </p>
+
+         
+        </div>
+      </form>
+    </form>
+    </div>
+
+
+
+
+      <div class="form-box login">
+      <h2>Login</h2>
+      <form action="" name="formlog" method="post" >
+        <div class="input-box">
+          <label for="mail"class="email-box" ></label>
+          <input type="email" name="email" placeholder="e-mail" id="name" required >
+          
+          <br>
+
+          <label class="pass-box" for="password"></label><br>
+          <input type="tel" name="pass" placeholder="password" id="password" required><br>
+
+        </div>
+        <br>
+        <button name="logbtn" type="submit" id="logbtn"   class="btn">Login</button>
+        <br>
+        <div class="login-register">
+          <p>Don't have an account?
+            <a href="#" class="register-link">register</a>
+
+          </p>
+
+
+
+        </div>
+    </div> 
+
+
+    </form>
+  </div>
+  <div class="welcomepage ">
+
+
+
+
+
+  </div>
+  </div>
+  </div>
+  
+  <script>    
+
+
+
+   
+
+
+
+
+       
+      </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="sweetalert2.all.min.js"></script> 
+  <!-- Select2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+   
+   <script src="panel.js"></script>
+   
+ 
+ 
+</body>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+*{
+  font-family: 'Poppins',sans-serif;
+}
+
+.form-label {
+    margin-bottom: 30px; /* İstenilen boşluk büyüklüğünü burada ayarlayabilirsiniz */
+  }
+  body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: url(back.jpg);
+background-size: cover;
+
+  }
+
+
+
+  header{
+position : fixed;
+top: 0;
+
+  }
+   h1,h2{
+font-size:2em;
+color: #162938;
+text-align: center;
+
+
+  }
+.wrapper{
+position: relative;
+width: 500px;
+height: 700px;
+background: transparent;
+border: 2px solid gray;
+ border-radius: 20px; 
+ backdrop-filter: blur(20px);
+ box-shadow: 0 0 30px black ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+overflow: hidden;
+float: right;
+transform: translateX(170px);
+
+  }
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+
+}
+header .navbar{
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin:0 auto;
+  justify-content: space-between;
+
+}
+.navbar .logo{
+ font-size : 2.1rem; 
+ font-weight: 600;
+}
+.navbar .logo span{
+ color:brown;
+ }
+.navbar .menu-links{
+  display: flex;
+  gap: 50px;
+  transform: translateX(90px);
+}
+ul.menu-links {
+  list-style: none;
+     font-family: 'Times New Roman';
+}
+
+  .navbar a {
+color: black;
+text-decoration: none;
+transition: 0.2s ease;
+
+  }
+  
+  .navbar a:hover {
+    color:brown;
+      }
+  .wrapper .form-box.login{
+    transition:  all .18s ease ;
+    transform: translateX(0);
+    }
+.wrapper.active .form-box.login{
+transition:none ;
+transform: translateX(-500px);
+}
+
+  .wrapper .form-box.register{
+   position: absolute;
+transition: none;
+   transform: translateX(500px);
+    }
+    .wrapper.active .form-box.register{
+      transition: all .18s ease;
+      transform: translateX(0);
+    } 
+
+    
+
+    .main-section .content{
+      height: 100vh;
+     position: relative;
+     color: white;
+     transform: translateY(160px);
+      padding: 0 20px;
+      }
+      .main-section 
+      {
+       color: black;
+        }
+        .main-section .content h1{
+          color: aliceblue;
+          }
+
+  input{
+position: relative;
+margin: 3px;
+padding: 12px;
+border-radius: 10px; 
+  }
+   label{
+    
+  color: antiquewhite;
+  }
+ button.btn {
+margin-left: 40%;
+
+  margin: 3px;
+width: 300px;
+height: 45px;
+background-color: #162938;
+border: none;
+border-radius: 6px;
+cursor:pointer;
+font-size: 1em;
+color: antiquewhite;
+
+ }
+
+
+ .login-register{
+font-size: .9em;
+color:#162938;
+text-align: center;
+ font-weight: 500;
+ margin: 10px 0 10px;
+
+ }
+ .login-register p {
+  color:aliceblue;
+  text-align: center;
+  font-weight: 300px;
+font-size:20px;
+  
+   }
+   .login-register p a{
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+  font-size:30px;
+    
+     }
+     .login-register p a:hover{
+     
+      text-decoration: underline;
+     
+      
+       }
+   
+
+       .input-box input{
+position: center;
+font-size: 18px;
+padding-left: 15px;
+
+
+       }
+    .input-box  {
+      position: center;
+     padding-left:9%;
+       
+
+
+    }
+    #ilSelect {
+padding-top: 0px;
+
+    }
+  
+    .select2-container--default .select2-selection--single {
+  
+      font-size: 18px;
+    margin-left: 3px;
+    width: 250px;
+    height: 400px;
+      border-radius: 20px; 
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 30px black ;
+      padding: 1.3rem;
+      margin-bottom: 0.8rem;
+      border: 2px solid black;
+         }
+        #select2-citySelect-container{
+     margin-top: -15px;
+          font-size: 25px;
+          margin-left: -0.9rem;
+        }
+     
+        #select2-occSelect-container{
+          margin-top: -15px;
+               font-size: 25px;
+               margin-left: -0.9rem;
+               
+             }
+
+
+             #select2-tckn-container{
+              margin-top: -15px;
+                   font-size: 25px;
+                   margin-left: -0.9rem;
+                 }
+              
+        .email-error,.tckn-error,.phone-error,.occ-error,.password-error{
+          display: block;
+font-weight: 1000;
+font-style: italic;
+padding: 5px;
+
+
+
+        }
+   
+        label.email-box.invalid{
+
+          color: red;
+        }
+    
+        label.email-box.valid{
+
+          color: green;
+        }
+
+
+        label.phone-box.invalid{
+
+          color: red;
+        }
+    
+        label.phone-box.valid{
+
+          color: green;
+
+        }
+        label.pass-box.invalid{
+
+          color: red;
+        }
+        label.pass-box.valid{
+
+          color: green;
+        }
+
+
+      
+
+        label.phone-box.invalid{
+
+          color: red;
+        }
+
+        label.phone-box.valid{
+
+          color: green;
+        }
+      
+        /* label.email-box.invalid span.email-error{
+          content: "";
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          top: 18px;
+          right: 5px;
+          z-index: 100;
+          color: #00ff00;
+        } */
+        
+
+.yellow-glow{
+  animation:yellow-glow-animation 5s;
+}
+
+@keyframes yellow-glow-animation {
+  0%{
+    background-color: yellow;
+  }
+  100%{
+    background-color: transparent;
+  }
+  
+}
+.password-error p{
+
+  margin: 2px;
+}
+
+
+.last-row {
+  /* Your custom styling for the last row goes here */
+  background-color:rebeccapurple !important;  /* For example, changing the background color */
+}
+.form-box-login{
+
+
+    transition: all 0.18s ease; /* Geçiş efekti için */
+    transform: translateX(0); /* Başlangıçta kaydırılmamış pozisyon */
+
+}
